@@ -1,0 +1,12 @@
+
+datos_Antonio_Torres = ["Antonio", "Torres", "calle", "Alcala", 690, "280022", 24, "Septiembre", 1978]
+print(datos_Antonio_Torres)
+nacimiento = datos_Antonio_Torres[8]
+print(nacimiento)
+datos_Antonio_Torres.append("ingeniero")
+datos_Antonio_Torres.insert(5,"Madrid")
+print(datos_Antonio_Torres)
+formacion= datos_Antonio_Torres[10]
+print(formacion)
+datos_Antonio_Torres.pop(10)
+print(datos_Antonio_Torres)
