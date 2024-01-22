@@ -1,0 +1,14 @@
+platos = {
+    'ensalada': {'ingredientes': ['lechuga', 'tomate', 'zanahoria'], 'precio': 5.99},
+    'pizza': {'ingredientes': ['salsa', 'queso', 'pepperoni'], 'precio': 8.99},
+    'sopa': {'ingredientes': ['caldo', 'verduras', 'fideos'], 'precio': 4.99}
+}
+print(platos)
+
+platos['ensalada']['precio'] = 6.99
+
+
+nuevo_plato = 'hamburguesa'
+platos[nuevo_plato] = {'ingredientes': ['carne', 'lechuga', 'queso'], 'precio': 9.99}
+
+print(platos)
