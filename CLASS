@@ -1,0 +1,42 @@
+class Estudiante:
+    def __init__(self, nombre, edad, calificaciones):
+        self.nombre = nombre
+        self.edad = edad
+        self.calificaciones = calificaciones
+
+    def calcular_promedio(self):
+        return sum(self.calificaciones) / len(self.calificaciones)
+
+    def aprobar(self):
+        promedio = self.calcular_promedio()
+        if promedio >= 70:
+            return True
+        else:
+            return False
+
+    def mostrar_informacion(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad} años")
+        print(f"Calificaciones: {self.calificaciones}")
+        print(f"Promedio: {self.calcular_promedio():.2f}")
+        if self.aprobar():
+            print("Estado: Aprobado\n")
+        else:
+            print("Estado: Reprobado\n")
+
+
+def main():
+    
+    estudiante1 = Estudiante("Juan", 20, [85, 90, 78, 92])
+    estudiante2 = Estudiante("Maria", 22, [60, 65, 70, 75])
+
+ 
+    print("Información del Estudiante 1:")
+    estudiante1.mostrar_informacion()
+
+    print("Información del Estudiante 2:")
+    estudiante2.mostrar_informacion()
+
+
+if __name__ == "__main__":
+    main()
