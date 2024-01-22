@@ -1,0 +1,28 @@
+class Vehiculo:
+    def __init__(self, marca, modelo, matricula):
+        self.marca = marca
+        self.modelo = modelo
+        self.matricula = matricula
+
+    def identificar(self):
+        print("Marca:", self.marca)
+        print("Modelo:", self.modelo)
+        print("Matrícula:", self.matricula)
+
+
+vehiculo1 = Vehiculo(marca="LAMBORGINI", modelo="URUS", matricula="ABC123")
+vehiculo2 = Vehiculo(marca="JEEP", modelo="CHEROKEE", matricula="XYZ789")
+
+print("Vehículo 1:")
+vehiculo1.identificar()
+
+print("\nVehículo 2:")
+vehiculo2.identificar()
+
+class Coche(Vehiculo):
+    def __init__(self, marca, modelo, matricula, color):
+        super().__init__(marca, modelo, matricula)
+        self.color = color
+
+    def abrir_puertas(self):
+        print(f"Las puertas del coche {self.marca} {self.modelo} {self.color} están abiertas.")
