@@ -1,0 +1,18 @@
+usuario= {
+    "nombre":"Antonio",
+    "apellido":"Torres",
+    "via":"Calle",
+    "nombre via":"Alcala",
+    "numero":690,
+    "cp": "28022",
+    "dia_nacimiento":24,
+    "mes_nacimiento":"Septiembre",
+    "anyo_nacimiento": 1978
+  }
+print(usuario)
+
+fecha_nacimiento = str(usuario['dia_nacimiento']) + "/" + usuario["mes_nacimiento"] + "/" + str(usuario["anyo_nacimiento"])
+print(fecha_nacimiento)
+usuario.update({"formacion":"Ingeniero"})
+print(usuario)
+
