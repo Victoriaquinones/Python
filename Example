@@ -1,0 +1,42 @@
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def mostrar_informacion(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad} años")
+
+
+class Programa:
+    def __init__(self):
+        self.lista_personas = []
+
+    def agregar_persona(self, persona):
+        self.lista_personas.append(persona)
+
+    def mostrar_personas(self):
+        for persona in self.lista_personas:
+            persona.mostrar_informacion()
+
+
+def main():
+    programa = Programa()
+
+
+    num_personas = int(input("Ingrese el número de personas: "))
+
+    for _ in range(num_personas):
+        nombre = input("Ingrese el nombre de la persona: ")
+        edad = int(input("Ingrese la edad de la persona: "))
+
+
+        persona = Persona(nombre, edad)
+        programa.agregar_persona(persona)
+
+    print("\nInformación de las personas ingresadas:")
+    programa.mostrar_personas()
+
+
+if __name__ == "__main__":
+    main()
