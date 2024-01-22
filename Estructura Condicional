@@ -1,0 +1,12 @@
+#estructuracondicional
+
+num= input("Escribe un numero del 1 y 20")
+int_num= int(num)
+
+if int_num < 10:
+  print("El valor selecionado es menor que 10")
+
+elif int_num >10:
+    print("El valor selecionado es mayor que 10")
+elif int_num ==10:
+  print("El valor seleccionado es 10")
